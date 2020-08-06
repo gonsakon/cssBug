@@ -1,0 +1,413 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* 以上為css reset */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "微軟正黑體", sans-serif;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 1002px;
+}
+
+.header {
+    font-size: 13px;
+}
+
+.contact {
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact ul {
+    display: flex;
+    padding: 7px 13px 7px 0;
+}
+
+.contact .style {
+    padding-left: 18px;
+    text-decoration: none;
+}
+
+.contact .style:hover {
+    text-decoration: underline;
+}
+
+.contact .fb {
+    background: url(https://i.postimg.cc/3rmmksr9/fb.png) no-repeat left center;
+    color: #667aad;
+}
+
+.contact .twitter {
+    background: url(https://i.postimg.cc/mZy3Xxxk/twitter-removebg-preview.png) no-repeat left center;
+    color: #00aaec;
+}
+
+.contact ul li:nth-child(2) {
+    margin: 0 8px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.nav .hexLogo {
+    display: block;
+    width: 170px;
+    height: 36px;
+    background: url(images/logo-ch.png);
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+.nav ul li:nth-child(2) {
+    margin: 0 35px 0;
+}
+
+.nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #00cc99;
+    padding: 17px 10px 17px 10px;
+    border-bottom: 3px solid transparent;
+}
+
+.nav ul li a:hover {
+    border-bottom: 3px solid #00cc99;
+}
+
+.banner {
+    height: 346px;
+    background-image: url(https://i.postimg.cc/sXm0CCc5/banner.png);
+    padding-top: 94px;
+    box-sizing: border-box;
+}
+
+.banner div {
+    height: 160px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.banner h1 {
+    font-size: 32px;
+    color: #ffffff;
+    line-height: 48px;
+    padding: 40px 0 0 23px;
+}
+
+.course {
+    padding-top: 63px;
+    margin-bottom: 65px;
+}
+
+.course ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.course a {
+    display: block;
+    text-decoration: none;
+}
+
+.course li {
+    width: 301px;
+    height: 325px;
+    padding: 0 23px 23px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px gray;
+    padding-top: 25px;
+}
+
+.course li a {
+    color: black;
+}
+
+.course li:hover {
+    box-shadow: 0 1px 10px gray;
+    margin-top: -10px;
+}
+
+.course li img {
+    margin: 0 auto;
+    display: block;
+}
+
+.course li h3 {
+    text-align: center;
+    font-size: 17px;
+    line-height: 29px;
+    font-weight: bold;
+}
+
+.course li p {
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.compare {
+    margin-bottom: 61px;
+}
+
+.compare table {
+    width: 840px;
+    margin: 0 auto;
+}
+
+.compare table caption {
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 29px;
+}
+
+.compare table tr {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    font-size: 14px;
+}
+
+.compare table thead tr:nth-child(1) {
+    background: #f7f7f7;
+    font-weight: bold;
+}
+
+.compare table tr td {
+    padding: 10px 0 14px 0;
+}
+
+.compare table tbody .mark {
+    color: #00a67d;
+}
+
+.information {
+    padding: 39px 21px 30px;
+    background: -webkit-linear-gradient(#00664d, #009771);
+    font-weight: bold;
+    margin-bottom: 29px;
+}
+
+.information p {
+    font-size: 23px;
+    line-height: 37px;
+    margin-bottom: 25px;
+    color: white;
+    text-align: center;
+}
+
+.information .form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information .form textarea {
+    width: 460px;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+}
+
+.information .form div {
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+}
+
+.information .form div label {
+    display: block;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 6px;
+}
+
+.name,
+.tel,
+.email {
+    border-radius: 3px;
+    padding: 9px;
+    font-size: 14px;
+    margin-bottom: 17px;
+    border-width: 0;
+    border: 1px solid #e1e1e1;
+}
+
+.information .form .button {
+    cursor: pointer;
+    align-self: flex-end;
+    padding: 10px 21px;
+    background: rgba(0, 204, 153, 1);
+    border: 0;
+    color: white;
+    border-radius: 3px;
+}
+
+.information .form .button:hover {
+    background: rgba(0, 204, 153, 0.5);
+}
+
+.footer {
+    padding: 0 15px 54px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.footer span {
+    color: #e55995;
+}
